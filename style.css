@@ -199,4 +199,11 @@ font-size: 30px;
 
 .card_box img{
     width: 60px;
+    cursor: pointer;
+}
+
+.one_select{
+    display:flex;
+    align-items:center;
+    gap: 30px;
 }
