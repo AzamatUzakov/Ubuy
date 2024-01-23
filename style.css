@@ -525,7 +525,6 @@ position: relative;
     background: linear-gradient(225deg, #75ff34 0%, #fff 100%);
     border: 1px solid black;
     border-bottom: 5px solid black;
-    font-size: 30px;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -536,6 +535,13 @@ left: 50%;
 transform: translateX(-50%);
 z-index: 99;
 
+}
+
+.fixed a{
+    font-size: 30px;
+text-decoration: none;
+color: black;
+font-weight: 700;
 }
 .fixed p{
     font-size: 15px;
