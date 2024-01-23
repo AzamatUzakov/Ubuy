@@ -21,13 +21,16 @@
 }
 
 .contener {
+    position: relative;
+
     width: 100%;
 }
 
 .slider_text_top {
     width: 100%;
-    height: 170px;
+    height: 100%;
     background-color: gainsboro;
+    padding-bottom: 20px;
 }
 
 .top_logo {
@@ -52,13 +55,14 @@
 
 .views_box {
     width: 60%;
-    height: 30px;
+    height: 100%;
     display: flex;
     background-color: #d2ddf8;
     align-items: center;
     gap: 5px;
     margin-top: 16px;
-    padding-left: 5px;
+    padding: 5px;
+    flex-wrap: wrap;
 
 }
 
@@ -75,13 +79,14 @@
 
 .download_box {
     width: 40%;
-    height: 30px;
+    height: 100%;
     display: flex;
     background-color: #d2f8d8;
     align-items: center;
     gap: 5px;
     margin-top: 10px;
-    padding-left: 5px;
+    padding: 5px;
+    flex-wrap: wrap;
 }
 
 .download_box p {
@@ -135,34 +140,35 @@
 
 
 
-.offer_box{
+.offer_box {
     width: 100%;
     padding: 10px;
     background-color: gainsboro;
 }
 
-.timer{
+.timer {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 15px;
     font-size: 22px;
-    font-weight:700;
+    font-weight: 700;
     margin-bottom: 20px;
 }
 
-.prise_btn{
-display: flex;
-align-items: center;
-justify-content: center;
-gap: 10%;
-width: 90%;
-height: 60px;
-margin: 0 auto;
-background: linear-gradient(225deg, #8fafff 0%, #fff 100%);
-border: 1px solid black;
-border-bottom: 5px solid black;
-font-size: 30px;
+.prise_btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10%;
+    width: 90%;
+    height: 60px;
+    margin: 0 auto;
+    background: linear-gradient(225deg, #8fafff 0%, #fff 100%);
+    border: 1px solid black;
+    border-bottom: 5px solid black;
+    font-size: 30px;
+    cursor: pointer;
 }
 
 
@@ -173,22 +179,23 @@ font-size: 30px;
 
 
 
-.buy_btn{
+.buy_btn {
     width: 90%;
-height: 60px;
-margin: 0 auto;
-background:  linear-gradient(225deg, #75ff34 0%, #fff 100%);
-border: 1px solid black;
-border-bottom: 5px solid black;
-font-size: 30px;
- margin-top: 20px;
- display: flex;
- align-items: center;
- justify-content: center;
+    height: 60px;
+    margin: 0 auto;
+    background: linear-gradient(225deg, #75ff34 0%, #fff 100%);
+    border: 1px solid black;
+    border-bottom: 5px solid black;
+    font-size: 30px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
 }
 
 
-.card_box{
+.card_box {
     width: 90%;
     display: flex;
     align-items: center;
@@ -197,13 +204,398 @@ font-size: 30px;
     margin-top: 20px;
 }
 
-.card_box img{
+.card_box img {
     width: 60px;
     cursor: pointer;
 }
 
-.one_select{
-    display:flex;
-    align-items:center;
+.w {
+    align-items: center;
     gap: 30px;
+    width: 93%;
+    height: 50px;
+    background-color: gainsboro;
+    border: 1px solid black;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 12px 10px 0;
+    margin-top: 10px;
+    margin-bottom: 4px;
+    padding-bottom: 20px;
+}
+
+.arrow_flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.arrow_flex img {
+    cursor: pointer;
+}
+
+.img_text {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.top_arrow {
+    display: none;
+}
+
+.delivery_img {
+    margin-top: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.p {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.m {
+    font-size: 14px;
+}
+
+
+.top_arrow_two {
+    display: none;
+}
+
+.top_arrow_three {
+    display: none;
+}
+
+.top_arrow_foor {
+    display: none;
+}
+
+.top_arrow_five {
+    display: none;
+}
+
+.user_product {
+    height: 100%;
+    margin: 20px 0 0;
+}
+
+hr {
+    height: 3px;
+    background-color: black;
+    margin-top: 15px;
+}
+
+
+.question-box {
+
+    width: 93%;
+    margin: 0 auto;
+}
+
+.question-box h2 {
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.question-box p {
+    font-size: 16px;
+    margin-top: 7px;
+}
+
+.que_img {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.ATM {
+    width: 93%;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0 auto;
+}
+
+.ATM_img {
+    margin-top: 20px;
+}
+
+.present-img {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.present_box h4 {
+    font-size: 22px;
+    margin: 30px 0 10px;
+}
+
+
+.present_box p {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+
+.reviews{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.star{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3px;
+}
+
+.star p{
+    margin-top: 7px;
+}
+
+.btn{
+    width: 120px;
+    font-size: 12px;
+    padding: 3px 0;
+    background-color: white;
+    border: 1px solid black;
+    border-bottom: 3px solid black;
+}
+
+.btn:hover{
+    border-bottom: 1px solid black;
+
+}
+
+.peoples_comments{
+    margin-top: 40px;
+}
+
+.z{
+    width: 93%;
+    height: 100%;
+    border: 3px solid black;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.review-img{
+    display: flex;
+    justify-content: center;
+}
+
+
+.user-name{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 14px;
+    margin-bottom: 3px;
+}
+
+
+.first-show_box{
+    display: none;
+}
+
+.z p{
+    margin-top: 10px;
+}
+
+.coment-show-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.t{
+    width: 30px;
+    height:30px;
+    border: 3px solid black;
+    cursor: pointer;
+    background-color: gainsboro;
+text-align: center;
+}
+
+
+
+.footer_contener{
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    padding: 20px 20px  80px;
+    margin-top: 39px;
+    position: relative;
+    
+}
+
+.footer_contener h2{
+    text-align: center;
+    color: #6f6f6f;
+
+}
+
+.services-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+.services-box a{
+    text-decoration: none;
+    font-size: 12px;
+margin-bottom: 18px;
+    color: #6f6f6f;
+}
+
+.services-box a:hover{
+    color: white;
+    transition: .6s ease;
+}
+
+.footer_contener h3{
+    font-size: 20px;
+    color: white;
+    line-height: 98%;
+    margin-bottom: 30px;
+}
+input{
+    width: 100%;
+    border: 0;
+    background-color: black;
+    border-bottom:3px solid gainsboro;
+    color: #6f6f6f;
+
+}
+
+.subscubrise{
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    background-color: white;
+    border: 0;
+    margin-top: 14px;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+
+}
+
+.little{
+    text-align: center;
+    margin: 14px 0 10px;
+    color: #6f6f6f;
+font-size: 10px;
+}
+
+.more{
+    width: 60px;
+    height: 20px;
+    border: 0;
+    font-size: 10px;
+    background-color: gray;
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo_and_signature{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    color: #6f6f6f;
+font-weight: 700;
+position: relative;
+
+}
+
+.fixed{
+    width: 300px;
+    height: 60px;
+    background: linear-gradient(225deg, #75ff34 0%, #fff 100%);
+    border: 1px solid black;
+    border-bottom: 5px solid black;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    cursor: pointer;
+position: fixed;
+bottom: 2%;
+left: 50%;
+transform: translateX(-50%);
+z-index: 99;
+
+}
+.fixed p{
+    font-size: 15px;
+    color: #6f6f6f;
+}
+
+@media (max-width:390px){
+    .call_center {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        gap: 10%;
+        font-size: 10px;
+        margin-top: 30px;
+        cursor: pointer;
+        
+    }
+
+    .views_box {
+        width: 80%;
+        height: 100%;
+        display: flex;
+        background-color: #d2ddf8;
+        align-items: center;
+        gap: 5px;
+        margin-top: 16px;
+        padding: 5px;
+        flex-wrap: wrap;
+    
+    }
+
+    
+.download_box {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    background-color: #d2f8d8;
+    align-items: center;
+    gap: 5px;
+    margin-top: 10px;
+    padding: 5px;
+    flex-wrap: wrap;
+}
+
+}
+@media (max-width:280px){
+    .call_center {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        gap: 10%;
+        font-size: 8px;
+        margin-top: 30px;
+        cursor: pointer;
+
+    }
+
+    
+.fixed{
+    width: 240px;}
 }
